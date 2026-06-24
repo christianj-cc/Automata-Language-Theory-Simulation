@@ -1,114 +1,108 @@
-# Automata and Language Theory | Simulation & Visualization Tool
+# Automata Theory Simulator
 
-An interactive educational and research tool built to let users easily simulate, test, and visualize abstract computational models like finite automata, grammars, and tape-based machines through clear step-by-step graphical animations.
+### Java-Based Educational Tool for Automata Theory and Computation
 
-Built as a CST4 final project by Bai Fatima Andong, Fionnah Keiz Coyoca, Christian James Cahilig, Karylle Mish Gellica, and John Llorie Sarmiento, University of Mindanao.
+Automata Theory Simulator is a desktop-based educational application developed using Java Swing and NetBeans. The program provides interactive simulations of fundamental computational models, allowing users to explore automata theory concepts through string validation, state transitions, recursive algorithms, and formal language processing.
 
----
+## Overview
 
-## What This Does
+This project was developed as part of our Theory of Computation coursework to bridge the gap between abstract computer science concepts and practical visualization. Automata theory is often difficult to understand due to its highly theoretical nature, so the application was designed to provide an interactive environment where users can experiment with different computational models and observe their behavior in real time.
 
-This application breaks down the abstract rules of formal language theory into clear, real-time visual step-logs. 
-
-Instead of guessing how a machine processes a string or handles transitions, you can input strings directly and watch the graphical interface step through state changes, character pushes or pops, and tape head movements. It acts as an interactive simulator designed to make theory-heavy computer science concepts easy to look at and understand.
-
----
-
-## Core Models Simulated
-
-The tool features six distinct computational and mathematical model simulations:
-
-- **DFA & NFA:** Watch state transitions highlight in real time as characters are read from an input string.
-- **Pushdown Automata (PDA):** Visualizes character stack activity, showing exact push and pop operations during processing.
-- **Context-Free Grammars (CFG):** Steps through string derivation trees and grammar production rules.
-- **Turing Machine:** Animates tape-head pointer movements doing binary addition and unary multiplication.
-- **Tower of Hanoi:** Visualizes state space tree traversal and recursive disk shifting step-by-step.
-
----
+The simulator includes implementations of Deterministic Finite Automata (DFA), Non-Deterministic Finite Automata (NFA), Pushdown Automata (PDA), Context-Free Grammars (CFG), Turing Machines, and the Tower of Hanoi problem.
 
 ## Features
 
-- **Live Animation Controls:** Pause, play, or step through state machine transitions at your own pace
-- **Trace-Logged Debugging:** A real-time side log that displays the exact execution paths and variables
-- **Input Cap Safeguards:** Built-in limits on maximum input values to ensure smooth graphical rendering
-- **Interactive UI Forms:** Simple clean menus to switch models and key in test cases instantly
+* Deterministic Finite Automata (DFA) simulation
+* Non-Deterministic Finite Automata (NFA) simulation
+* Pushdown Automata (PDA) simulation
+* Context-Free Grammar (CFG) validation
+* Turing Machine computation simulation
+* Tower of Hanoi recursive solver
+* String validation and language acceptance testing
+* State transition visualization
+* Interactive graphical user interface
 
----
+## Technologies Used
 
-## Installing and Running Locally
+* Java
+* Java Swing
+* NetBeans IDE
+* Data Structures (Arrays and Stacks)
+* Automata Theory Concepts
+* Formal Language Theory
 
-Follow these steps to run the project on your own computer.
+## Project Structure
 
-### What You'll Need First
+```text
+src/            Source code
+screenshots/    Application screenshots
+docs/           Project documentation
+assets/         Application resources
+```
 
-Make sure you have these installed before starting:
+## Running the Project
 
-- **Java Development Kit (JDK 17 or higher)** — Download from [oracle.com](https://www.oracle.com/java/technologies/downloads/).
-- **Git** — Download from [git-scm.com](https://git-scm.com/downloads).
+1. Clone this repository.
+2. Open the project in NetBeans IDE.
+3. Resolve problems with FlatLaf by clicking Resolve Problem and selecting the flatlaf-3.5.2.jar file in the root folder.
+4. Run the application.
+5. Select a computational model from the interface.
+6. Test strings, operations, or simulations using the provided examples.
 
-To check if they're ready, open a terminal (Command Prompt on Windows, Terminal on Mac/Linux) and type:
+## Screenshots
 
-java -version
-git --version
+### Main Menu
 
----
+![Main Menu](screenshots/dashboard.png)
 
-### Step 1 — Clone the Repository
+### DFA Simulation
 
-This downloads a copy of the project to your computer:
+![DFA Simulation](screenshots/dfa.png)
 
-git clone https://github.com/mishgellica/automata-language-theory.git
-cd automata-language-theory
+### NFA Simulation
 
----
+![NFA Simulation](screenshots/ndfa.png)
 
-### Step 2 — Compile the Code
+### PDA Simulation
 
-Compile all Java source files from your command terminal:
+![PDA Simulation](screenshots/pda.png)
 
-javac src/*.java
+### Turing Machine
 
+![Turing Machine](screenshots/tm.png)
 
----
+### Tower of Hanoi
 
-### Step 3 — Run the App
+![Tower of Hanoi](screenshots/toh1.png)
 
-Launch the application window using the main execution layer:
+## Future Improvements
 
-java src/Main
+* Custom automata creation and editing
+* Graphical state diagram visualization
+* User-defined transition tables
+* Additional formal language models
+* Step-by-step execution animations
+* Exportable simulation reports
 
+## Contributors
 
-*(Note: Replace `Main` with the specific entry point filename if your project structure uses a different driver class).*
+This project was developed as a group project.
 
----
+### Team Members
 
-## Tech Stack
+- Christian James Cahilig
+- Bai Fatima Andong
+- Fionnah Keiz Coyoca
+- Karylle Mish Gellica
+- John Llorie Sarmiento
 
-- **Interface Framework:** Java Swing (GUI Graphics & Timers)
-- **Execution Engine:** Java Development Kit (JDK)
-- **Architecture Layout:** Object-Oriented Simulation Logic
+## Learning Outcomes
 
----
-
-## Limitations
-
-- **Desktop Bound Application:** Runs as a native desktop layout window rather than a live website link or hosted browser application.
-- **Performance Boundary Caps:** Heavy string inputs or massive recursion depths are limited by maximum value guards to prevent interface lagging.
-
----
-
-## Authors
-
-* **Bai Fatima A. Andong** — b.andong.545438@umindanao.edu.ph
-* **Fionnah Keiz Coyoca** — f.coyoca.544111@umindanao.edu.ph
-* **Christian James C. Cahilig** — c.cahilig.544797@umindanao.edu.ph
-* **Karylle Mish T. Gellica** — k.gellica.544337@umindanao.edu.ph
-* **John Llorie Sarmiento** — j.sarmiento.545495@umindanao.edu.ph
-
-BS Computer Science, University of Mindanao — CST4 Final Project, 2026
-
----
-
-## License
-
-This project is for academic and educational purposes only.
+* Automata Theory and Formal Languages
+* Computational Models and State Machines
+* Recursive Algorithm Design
+* Stack-Based Computation
+* Java GUI Development
+* Event-Driven Programming
+* Problem Solving and Logical Analysis
+* Translating Theoretical Concepts into Software Applications
